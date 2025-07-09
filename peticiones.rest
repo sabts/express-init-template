@@ -1,3 +1,14 @@
 @HOST =  http://localhost:3000
 
 GET {{HOST}}/api/students
+
+###
+POST {{HOST}}/api/students
+Content-Type: application/json
+
+{
+    "name": "Sabrina",
+    "surname": "Taraschi",
+    "phone": "738247824",
+    "email": "sabrinataraschi@alumnostrazos.net"
+}

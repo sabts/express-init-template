@@ -5,6 +5,9 @@ const app = require("./src/app");
 // Config .env
 require("dotenv").config();
 
+//Configuración de DB es necesario para que se concecte a la base de datos
+require('./src/config/db')
+
 // Server creation
 const server = http.createServer(app);
 
