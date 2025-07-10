@@ -1,5 +1,10 @@
-const router = require('express').Router();
+const router = require("express").Router();
+const teachersController = require("../../controllers/teachers.controller");
 
-// Define your routes here
+//Get Routes
+router.get("/", teachersController.getAll);
+
+//Post Routes
+router.post("/", teachersController.create);
 
 module.exports = router;

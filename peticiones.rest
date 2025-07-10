@@ -12,3 +12,20 @@ Content-Type: application/json
     "phone": "738247824",
     "email": "sabrinataraschi@alumnostrazos.net"
 }
+
+##########
+#TEACHERS#
+##########
+
+GET {{HOST}}/api/teachers
+
+###
+POST {{HOST}}/api/teachers
+Content-Type: application/json
+
+{
+    "name": "Pepe",
+    "surname": "Perex",
+    "age": 18,
+    "available": true
+}
