@@ -7,11 +7,23 @@ POST {{HOST}}/api/students
 Content-Type: application/json
 
 {
-    "name": "Sabrina",
-    "surname": "Taraschi",
+    "name": "Juam",
+    "surname": "Tjnk",
     "phone": "738247824",
-    "email": "sabrinataraschi@alumnostrazos.net"
+    "email": "juanghn@alumnostrazos.net"
 }
+
+###
+PUT  {{HOST}}/api/students/686f7fc0a2085c05d6e7a24d
+Content-Type: application/json
+
+{
+    "surname": "Taraschi"
+}
+
+###
+DELETE   {{HOST}}/api/students/686f7fc0a2085c05d6e7a24d
+Content-Type: application/json
 
 ##########
 #TEACHERS#
@@ -29,3 +41,4 @@ Content-Type: application/json
     "age": 18,
     "available": true
 }
+
