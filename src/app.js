@@ -1,10 +1,19 @@
 // Creation and configuration of the Express APP
 const express = require("express");
 const cors = require("cors");
+const dayjs = require("dayjs")
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+//Middlewares
+app.use((req, res, next) => {
+    const currentDay = dayjs()
+    console.log(currentDay.format('DD-MMMM-YYYY HH:mm'))
+    next()
+});
+
 
 // Route configuration
 // Ex.
